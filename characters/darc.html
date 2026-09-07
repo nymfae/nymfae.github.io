@@ -136,12 +136,12 @@
                             .then((response) => response.json())
                             .then((siteData) => {
                                 //set overall variables
-                                let siteName = 'darc';
+                                let siteName = 'project darc';
                                 let siteObject = siteName !== 'all' ? siteData.filter(item => item.Site === siteName) : siteData;
                                 let threadStats = createThreadStats(threadData, siteObject, siteName, siteData);
 
                                 /*Thread Status*/
-                                new Chart(document.getElementById('siteidfromsheet'), {
+                                new Chart(document.getElementById('darc'), {
                                     ...chartOptions,
                                     data: {
                                         labels: threadStats[0].status.tags.map(item => item.toUpperCase()),
