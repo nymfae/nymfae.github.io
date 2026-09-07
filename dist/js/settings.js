@@ -12,6 +12,35 @@ const relationshipSections = `<option value="">(select)</option>
     <option value="pets" data-id="7">Pets</option>
     <option value="miscellaneous" data-id="8">Miscellaneous</option>`;
 const relationshipOptions = `<option value="">(select)</option>
+    <optgroup label="Platonic">
+        <option value="found family">Found Family</option>
+        <option value="best friend">Best Friend</option>
+        <option value="friend">Friend</option>
+        <option value="roommate">Roommate</option>
+        <option value="classmate">Classmate</option>
+    </optgroup>
+    <optgroup label="Antagonistic">
+        <option value="ex-spouse">Ex-spouse</option>
+        <option value="ex-betrothed">Ex-betrothed</option>
+        <option value="ex-parter">Ex-partner</option>
+        <option value="ex-friend">Ex-friend</option>
+        <option value="rival">Rival</option>
+        <option value="annoyance">Annoyance</option>
+        <option value="dislikes">Dislikes</option>
+        <option value="estranged">Estranged</option>
+    </optgroup>
+    <optgroup label="Romantic">
+        <option value="spouse">Spouse</option>
+        <option value="betrothed">Betrothed</option>
+        <option value="partner">Partner</option>
+        <option value="crush">Crush</option>
+        <option value="fling">Fling</option>
+    </optgroup>
+    <optgroup label="Academic">
+        <option value="professor">Professor</option>
+        <option value="classmate">Classmate</option>
+        <option value="ta">TA</option>
+    </optgroup>
     <optgroup label="Family">
         <option value="parent">Parent</option>
         <option value="sibling">Sibling</option>
@@ -36,19 +65,6 @@ const relationshipOptions = `<option value="">(select)</option>
         <option value="niece">Niece</option>
         <option value="extended family">Extended Family</option>
     </optgroup>
-    <optgroup label="Romantic">
-        <option value="spouse">Spouse</option>
-        <option value="betrothed">Betrothed</option>
-        <option value="partner">Partner</option>
-        <option value="crush">Crush</option>
-        <option value="fling">Fling</option>
-    </optgroup>
-    <optgroup label="Platonic">
-        <option value="found family">Found Family</option>
-        <option value="best friend">Best Friend</option>
-        <option value="friend">Friend</option>
-        <option value="roommate">Roommate</option>
-    </optgroup>
     <optgroup label="Professional">
         <option value="business partner">Business Partner</option>
         <option value="employer">Employer</option>
@@ -57,16 +73,6 @@ const relationshipOptions = `<option value="">(select)</option>
         <option value="co-worker">Co-worker</option>
         <option value="client">Client</option>
         <option value="regular customer">Regular Customer</option>
-    </optgroup>
-    <optgroup label="Antagonistic">
-        <option value="ex-spouse">Ex-spouse</option>
-        <option value="ex-betrothed">Ex-betrothed</option>
-        <option value="ex-parter">Ex-partner</option>
-        <option value="ex-friend">Ex-friend</option>
-        <option value="rival">Rival</option>
-        <option value="annoyance">Annoyance</option>
-        <option value="dislikes">Dislikes</option>
-        <option value="estranged">Estranged</option>
     </optgroup>
     <optgroup label="Miscellaneous">
         <option value="neighbour">Neighbour</option>
