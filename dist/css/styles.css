@@ -71,8 +71,8 @@ p:last-child {
   --font--body: 'Nunito Sans', sans-serif;
   --font--serif: 'Playfair', serif;
   --radius--standard: 5px;
-  --accent: rgb(105, 158, 156);
-  --bg-accent: rgb(105, 158, 156);
+  --accent: rgb(213, 178, 245);
+  --bg-accent: rgb(203, 147, 221);
   --rgb: 105, 158, 156;
   --bg--primary: rgb(52, 52, 52);
   --bg--secondary: rgb(36, 36, 36);
