@@ -137,71 +137,7 @@
                         });
                     </script>
 
-                    <!-- |Start Site Status Block| -->
-                    <div class="charts--thread-status charts--breakdown">
-                        <h2>Warded</h2>
-                        <canvas id="warded"></canvas>
-                    </div>
-                    <script>
-                        fetch(`https://opensheet.elk.sh/${sheetID}/Threads`)
-                        .then((response) => response.json())
-                        .then((threadData) => {
-                            fetch(`https://opensheet.elk.sh/${sheetID}/Sites`)
-                            .then((response) => response.json())
-                            .then((siteData) => {
-                                //set overall variables
-                                let siteName = 'warded';
-                                let siteObject = siteName !== 'all' ? siteData.filter(item => item.Site === siteName) : siteData;
-                                let threadStats = createThreadStats(threadData, siteObject, siteName, siteData);
 
-                                /*Thread Status*/
-                                new Chart(document.getElementById('siteidfromsheet'), {
-                                    ...chartOptions,
-                                    data: {
-                                        labels: threadStats[0].status.tags.map(item => item.toUpperCase()),
-                                        datasets: [{
-                                            data: threadStats[0].status.totals,
-                                            ...datasetOptions
-                                        }]
-                                    },
-                                });
-                            });
-                        });
-                    </script>
-                    <!-- |End Site Status Block| -->
-
-                                        <!-- |Start Site Status Block| -->
-                    <div class="charts--thread-status charts--breakdown">
-                        <h2>Project Darc</h2>
-                        <canvas id="darc"></canvas>
-                    </div>
-                    <script>
-                        fetch(`https://opensheet.elk.sh/${sheetID}/Threads`)
-                        .then((response) => response.json())
-                        .then((threadData) => {
-                            fetch(`https://opensheet.elk.sh/${sheetID}/Sites`)
-                            .then((response) => response.json())
-                            .then((siteData) => {
-                                //set overall variables
-                                let siteName = 'project darc';
-                                let siteObject = siteName !== 'all' ? siteData.filter(item => item.Site === siteName) : siteData;
-                                let threadStats = createThreadStats(threadData, siteObject, siteName, siteData);
-
-                                /*Thread Status*/
-                                new Chart(document.getElementById('siteidfromsheet'), {
-                                    ...chartOptions,
-                                    data: {
-                                        labels: threadStats[0].status.tags.map(item => item.toUpperCase()),
-                                        datasets: [{
-                                            data: threadStats[0].status.totals,
-                                            ...datasetOptions
-                                        }]
-                                    },
-                                });
-                            });
-                        });
-                    </script>
-                    <!-- |End Site Status Block| -->
 
                                         <!-- |Start Site Status Block| -->
                     <div class="charts--thread-status charts--breakdown">
