@@ -141,7 +141,7 @@
                                 let threadStats = createThreadStats(threadData, siteObject, siteName, siteData);
 
                                 /*Thread Status*/
-                                new Chart(document.getElementById('siteidfromsheet'), {
+                                new Chart(document.getElementById('sync'), {
                                     ...chartOptions,
                                     data: {
                                         labels: threadStats[0].status.tags.map(item => item.toUpperCase()),
