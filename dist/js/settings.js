@@ -90,6 +90,7 @@ const heatmapLow = '103, 166, 154';
 const heatmapMid = '111, 155, 104';
 const heatmapHigh = '174, 157, 102';
 const chartColors = [
+    '#d5b2f5', //pastel purple
     '#c283ac', //pink
     '#6c90c7', //blue
     '#b483c2', //purple
